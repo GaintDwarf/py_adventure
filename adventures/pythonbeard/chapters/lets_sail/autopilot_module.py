@@ -45,5 +45,4 @@ def get_command(location_type: int) -> Command:
     :param location_type: the location type 
     """
     # Your code here:
-    return STOP if location_type is LocationTypes.WHALE_SPOT else \
-        SAIL_FAST if location_type is LocationTypes.OPEN_SEA else SAIL_SLOW
+    pass
