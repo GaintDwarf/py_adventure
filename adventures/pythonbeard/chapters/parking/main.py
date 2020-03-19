@@ -4,7 +4,7 @@ from utils.level_key import get_hash
 
 if __name__ == "__main__":
     parking_spots = range(10, 20, 2)
-    ship = Ship(5, 15)
+    ship = Ship(15)
 
     match = search_parking(ship, parking_spots)
 

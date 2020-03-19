@@ -3,7 +3,7 @@ from adventures.pythonbeard.common.subconscious import Subconscious
 # Here we can see our first none basic python object 'subconscious'.
 # This is an object or better called a class which contains all of 
 # Pythonbeard's subconsciousness.
-# Remember all of thous doctrings? well now you will see how handy they are
+# Remember all of those doctrings? well now you will see how handy they are
 # if you will write help(subconscious) you will be able to see that class's
 # doctring to get a better grap about what it is (and to his inner functions).
 

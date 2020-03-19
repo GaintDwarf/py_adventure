@@ -28,7 +28,7 @@ if __name__ == "__main__":
     
     # Create the title
     width = shutil.get_terminal_size().columns
-    execution_title = "[Executing Chaper : {}]".format(chapter_title)
+    execution_title = "[Executing Chapter : {}]".format(chapter_title)
     wrapper_left = "-" * ((width - len(execution_title)) // 5)
     wrapper_right = "-" * (width - len(execution_title) - len(wrapper_left))
     print("{}{}{}".format(wrapper_left, execution_title, wrapper_right))

@@ -3,24 +3,12 @@ from adventures.pythonbeard.common.location import Location, LocationTypes
 # To avoid "magic numbers" in our code we can define constants which we will
 # able to use in multiple other places.
 # Commands:
+Command = int
 SAIL_FAST = 0
 SAIL_SLOW = 1
 STOP = 2
 
-# If you will type help(LocationTypes) you will be able to see another way of
-# defining some constants. At this point you don't must use them. 
-
-def get_command(location_type: int) -> int:
-    """
-    Get name the first name in mind.
-    
-    :param subconscious: Pythonbeard's subconscious.
-    :type subconscious: Subconscious
-    """
-    # Your code here:
-    return STOP if location_type is LocationTypes.WHALE_SPOT else \
-        SAIL_FAST if location_type is LocationTypes.OPEN_SEA else SAIL_SLOW
-
+# A function which is already written...
 def sail_at(current_location: Location) -> str:
     """
     sail_at a sertain location
@@ -39,3 +27,23 @@ def sail_at(current_location: Location) -> str:
         return "Whales"
     else:
         return "I have no clue"
+
+
+def get_command(location_type: int) -> Command:
+    """
+    Receive a location_type when:
+        0 = open sea
+        1 = shalow water
+        2 = whale spot
+    
+    This function will return the current command which matches the type.
+    
+    SAIL_FAST  for an open sea terrain
+    SAIL_SLOW  for a shallow water
+    STOP       for a wale spot
+
+    :param location_type: the location type 
+    """
+    # Your code here:
+    return STOP if location_type is LocationTypes.WHALE_SPOT else \
+        SAIL_FAST if location_type is LocationTypes.OPEN_SEA else SAIL_SLOW
