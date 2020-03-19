@@ -142,4 +142,5 @@ dmypy.json
 # Meta files
 meta.json
 brain_module.py
+output-file.txt
 
