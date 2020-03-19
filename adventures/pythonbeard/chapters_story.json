@@ -114,7 +114,7 @@
             "key"    : 9,
             "title"  : "A Strange Man",
             "story"  : ["\"Well that was an hustle...\" said Bob \"I think i need an ale right now...",
-                        "Are you coming\". Well... You don't anything better to do right now. You get",
+                        "Are you coming\". Well... You don't have anything better to do right now. You get",
                         "to The \"Sunken Norwegian\" and you see there a weird man talking \"There is a place",
                         "called Atlantis! It's real. You can even go there if you don't believe me.\" You can",
                         "see him taking out an old map. He sees you and starts talking with you:"],
@@ -131,7 +131,7 @@
                         "his map. \"You know you can't go underwater right?\" Bob noted (Well shut",
                         "up Bob. One more comment like this one and I'll murder you). \"Anyway... we can't just",
                         "go and sail we need to calculate our way precisely and sort the destinations\""],
-            "riddle" : ["I've already picked up out checkpoints, but can you sort them please?",
+            "riddle" : ["I've already picked up our checkpoints, but can you sort them please?",
                         "Assume you are at Point(0, 0). Sort points by distance from you."],
             "hint"   : "Use the sorted function",
             "answer" : "6f9279e958"

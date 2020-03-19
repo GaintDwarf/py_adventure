@@ -4,7 +4,7 @@ from typing import List
 # This is a namedtuple, an name tuple is a part of the 'collections' module,
 # which contains many special collections types (as the name suggests).
 
-# A name tuple is an easy way to create a basic structure which in herits
+# A name tuple is an easy way to create a basic structure which inherits
 # from the normal tuple but, has names for each index in it.
 Point = namedtuple("Point", ["x", "y"])
 

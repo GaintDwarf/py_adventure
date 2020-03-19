@@ -80,7 +80,10 @@ class TerminalController(object):
         self.input_array.append(input_string + user_input)
 
         response = input_callback(user_input)
-        self.input_array.append(response[1])
+        if isinstance(response[1], list):
+            self.input_array.extend(response[1])
+        else:
+            self.input_array.append(response[1])
 
         self.refrash_input()
 
@@ -145,7 +148,8 @@ class TerminalController(object):
 
             print("\r\n".join(self.input_array[-left_rows:]))
         else:
-            print(self.input_array[-1])
+            print("\r\n".join(self.input_array[1:]))
+            self.input_array = []
     
     def enable_hidden_text(self):
         """

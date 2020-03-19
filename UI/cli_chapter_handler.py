@@ -48,9 +48,12 @@ class CliChapterHandler(IChapterHandler):
             if user_input == "skip":
                 return False, ""
             if user_input == "run":
-                subprocess.call(["python3" if os_name == "linux" else "python", 
-                                 (os.path.join(os.path.curdir, "create_module.py"))])
-                return True, ""
+                with open("output-file.txt", 'w') as out:
+                    subprocess.call(["python3" if os_name == "linux" else "python", 
+                                    (os.path.join(os.path.curdir, "create_module.py"))], 
+                                    stdout=out, stderr=out)
+                with open("output-file.txt") as res:
+                    return True, list(map(str.strip, res.readlines()))
             else:
                 chaper_result = chapter.check_answer(user_input)
                 return not chaper_result, "Well done!" if chaper_result \
